@@ -1,0 +1,4 @@
+name: BlockInSight
+version: ${project.version}
+main: me.hsgamer.blockinsight.BlockInSight
+api-version: 1.13
