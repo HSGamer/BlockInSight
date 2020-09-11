@@ -31,6 +31,7 @@ public class MainConfig extends PluginConfig {
     }
   };
   public static final IntegerConfigPath PERIOD = Paths.integerPath("period", 0);
+  public static final IntegerConfigPath MAX_DISTANCE = Paths.integerPath("max-distance", 50);
 
   public MainConfig(JavaPlugin plugin) {
     super(plugin, "config.yml");
@@ -42,5 +43,6 @@ public class MainConfig extends PluginConfig {
   private void setDefaultConfig() {
     MATERIAL.setConfig(this);
     PERIOD.setConfig(this);
+    MAX_DISTANCE.setConfig(this);
   }
 }

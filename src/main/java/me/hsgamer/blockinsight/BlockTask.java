@@ -17,7 +17,7 @@ public class BlockTask extends BukkitRunnable {
 
   @Override
   public void run() {
-    Block block = player.getTargetBlock(null, 50);
+    Block block = player.getTargetBlock(null, Math.min(100, MainConfig.MAX_DISTANCE.getValue()));
     if (block.getType().equals(Material.AIR)) {
       return;
     }
