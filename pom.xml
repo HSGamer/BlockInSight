@@ -6,7 +6,7 @@
 
   <groupId>me.HSGamer</groupId>
   <artifactId>BlockInSight</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>BlockInSight</name>
@@ -17,6 +17,7 @@
   </properties>
 
   <build>
+    <finalName>${project.artifactId}</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
